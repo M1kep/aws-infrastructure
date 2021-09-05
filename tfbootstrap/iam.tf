@@ -18,7 +18,8 @@ data "aws_iam_policy_document" "terraform-cloud-tfaccess" {
     effect = "Allow"
     actions = [
       "vpc:*",
-      "iam:*"
+      "iam:*",
+      "route53:*"
     ]
     resources = ["*"]
   }
